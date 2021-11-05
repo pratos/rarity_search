@@ -3,6 +3,10 @@ name = "rarity_search"
 version = "0.1.0"
 description = ""
 authors = ["shodh_nft <info@shodh.co>"]
+packages = [
+  {include = "scripts/"},
+  {include = "src/"}
+]
 
 [tool.poetry.scripts]
 test = "scripts.test:test"
