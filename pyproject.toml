@@ -2,7 +2,12 @@
 name = "rarity_search"
 version = "0.1.0"
 description = ""
-authors = ["pratos <prathamesh@fnp.dev>"]
+authors = ["shodh_nft <info@shodh.co>"]
+
+[tool.poetry.scripts]
+test = "scripts.test:test"
+lint = "scripts.lint:lint"
+fix = "scripts.lint:fix"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -24,3 +29,17 @@ black = {version = "^21.10b0", allow-prereleases = true}
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 120
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "0.1.0"
