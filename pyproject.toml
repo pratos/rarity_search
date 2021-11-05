@@ -29,6 +29,7 @@ commitizen = "^2.20.0"
 autoflake = "^1.4"
 isort = "^5.10.0"
 black = {version = "^21.10b0", allow-prereleases = true}
+vcrpy = "^4.1.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
